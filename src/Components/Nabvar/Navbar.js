@@ -2,13 +2,14 @@
 
 import React from 'react'
 import './Navbar.css'
-
+// src\Components\Nabvar\Navbar.js
+//src\Assets\logo.png
 
 const Navbar = () => {
   return (
     <nav className="navbar-boxes navbar navbar-expand-lg bg-light">
         <div className="navbar-boxes container-fluid">
-            <a className="navbar-brand" href="#"><img className='logo' src='./Assets/logo.png'></img></a>
+            <a className="navbar-brand" href="#"><img className='logo' src='.\Assets\logo.png'></img></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
