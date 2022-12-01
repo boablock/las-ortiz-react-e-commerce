@@ -2,3 +2,16 @@
 .navbar-boxes{
     border: solid 1px grey;
 }
+
+.logo{
+    border-radius: 100px;
+}
+
+.nav-item-cart{
+   border: solid 1px red;
+   width: 50px;
+}
+
+.nav-item-cart:hover{
+    cursor: pointer;
+}

@@ -13,7 +13,7 @@ const Card = (props) => {
     <p className="card-text">{description}</p>
     <a href="#" className="btn btn-primary">{btnText}</a>
   </div>
-</div>
+</div> 
   )
 }
 
