@@ -36,6 +36,10 @@ const Navbar = () => {
                       </a>
                     </li>
                 </ul>
+                      <a className="cart nav-link " >
+                        <CartWidget/>
+                      </a>
+               
             </div>
         </div>
     </nav>
