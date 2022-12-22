@@ -1,0 +1,68 @@
+.HomeSection1 {
+    background-image: url(../../../public/Assets/backgroundhome2.jpg);
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .HomeSection1 .boxTransparente {
+    background-color: #EDE1DB;
+    -moz-opacity: 0.75;
+    opacity: 0.75;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+  }
+  .HomeSection1 .boxTransparente #divHome {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .HomeSection1 .boxTransparente #divHome .lasOrtizTitle {
+    font-weight: 700;
+  }
+  .HomeSection1 .boxTransparente #divHome .bi-instagram {
+    font-size: 30px;
+    color: black;
+  }
+  .HomeSection1 .boxTransparente #divHome .bi-instagram:hover {
+    color: #b39ddb;
+    transform: scale(0.9);
+  }
+  
+  .block1, .block2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffde7;
+    height: 500px;
+  }
+  .block1 .titleBlock, .block2 .titleBlock {
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  .block1 .pBlock, .block2 .pBlock {
+    text-align: center;
+  }
+  .block1 .btn-primary, .block2 .btn-primary {
+    margin-top: 20px;
+  }
+  .block1 .btn-primary:hover, .block2 .btn-primary:hover {
+    background-color: #b39ddb;
+    transform: scale(0.9);
+  }
+  
+  .block2 {
+    height: 500px;
+  }
+  .block2 #imgNosotras {
+    width: 100%;
+    height: 500px;
+    margin-left: 20px;
+  }
