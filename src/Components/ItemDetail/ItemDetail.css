@@ -1,0 +1,15 @@
+
+.card{
+    width: 16rem;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 3rem;
+  }
