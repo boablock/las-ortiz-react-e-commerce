@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card/Card";
 import { NavLink } from "react-router-dom";
+
 const ItemList = ({ products = [] }) => {
   return (
     <>
@@ -19,9 +20,9 @@ const ItemList = ({ products = [] }) => {
         </ul>
       </div>
       <div className="wrapper mt-5">
-        {products.map(({ title, img, btnText, btnClassName }, index) => (
+        {products.map(({ title, img, btnText, btnClassName,id }) => (
           <Card
-            key={index} // atributo unico para identificar el objeto en el arreglo (posicion en el caso de index); tmb se puede generar un atributo id en cada uno de ellos.
+            key={id} // atributo unico para identificar el objeto en el arreglo (posicion en el caso de index); tmb se puede generar un atributo id en cada uno de ellos.
             title={title}
             img={img}
             btnText={btnText}

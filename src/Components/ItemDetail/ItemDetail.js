@@ -1,18 +1,19 @@
-import React from 'react'
-import './ItemDetail.css'
-export const ItemDetail = ({data}) => {
- 
+import React from "react";
+import "./ItemDetail.css";
+import { Link } from "react-router-dom";
+
+export const ItemDetail = ({ data }) => {
   return (
     <div className="card">
-    <img src={data.img} className="card-img-top" alt="..." />
-    <div className="card-body">
-      <h5 className="card-title">{data.title}</h5>
-      <a href="#" className="btn btn-primary">
-        {data.btnText}
-      </a>
+      <img src={data.img} className="card-img-top" alt="" />
+      <div className="card-body">
+        <h5 className="card-title">{data.title}</h5>
+        <Link to={`/detail/${data.id}`} className="btn btn-primary">
+          {data.btnText}
+        </Link>
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default ItemDetail
+export default ItemDetail;
