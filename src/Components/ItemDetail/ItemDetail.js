@@ -2,8 +2,9 @@ import React from "react";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
 
-export const ItemDetail = ({ data }) => {
+export const ItemDetail = ( {data} ) => {
   return (
+   
     <div className="card">
       <img src={data.img} className="card-img-top" alt="" />
       <div className="card-body">
