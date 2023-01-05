@@ -13,20 +13,21 @@
             "title": "Milley",
             "img" :"./Assets/suscri8.jpg",
             "btnText": "Encargar",
-            "btnClassName":"btn btn-primary"
+            "btnClassName":"btn btn-primary",
+            "category": "ramos"
         },
         {
             "id": 3,
-            "title": "Flower-box",
+            "title": "Flower-box1",
             "img" :"./Assets/flowerbox1.PNG",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
-            "category": "flower boxes"
+            "category": "flower-boxes"
 
         },
         {
             "id": 4,
-            "title": "Milley",
+            "title": "Mike",
             "img" :"./Assets/suscri8.jpg",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
@@ -34,11 +35,11 @@
         },
         {
             "id": 5,
-            "title": "Flower-box",
+            "title": "Flower-box2",
             "img" :"./Assets/flowerbox1.PNG",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
-            "category": "flower boxes"
+            "category": "flower-boxes"
             
         },
         {
@@ -51,7 +52,7 @@
         },
         {
             "id": 7,
-            "title": "Flower-box",
+            "title": "Flower-box3",
             "img" :"./Assets/flowerbox1.PNG",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
@@ -59,7 +60,7 @@
         },
         {
             "id": 8,
-            "title": "Ashton",
+            "title": "Britney",
             "img" :"https://static.wixstatic.com/media/9c7380_5e7e8ed4e84d40ae9a7794a52e48a2c4~mv2.jpg/v1/fill/w_317,h_257,al_c,q_80,usm_0.66_1.00_0.01/9c7380_5e7e8ed4e84d40ae9a7794a52e48a2c4~mv2.webp",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",

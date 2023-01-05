@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
+import { useParams } from "react-router-dom";
 
-
+//Hacer el mismo proceso que en itemListContainer, haciendo promise al JSON para acceder a todos los productos. 
 const ramo1 = {
   id: 1,
   title: "Rouses",

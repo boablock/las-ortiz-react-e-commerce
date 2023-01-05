@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import Cart from "./Components/Cart/Cart";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
+import Error404 from "./Components/404/Error404";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/category/:categoryId" element={<ItemListContainer />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/datail" element={<ItemDetailContainer />} />
+        <Route path='*' element={<Error404/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
