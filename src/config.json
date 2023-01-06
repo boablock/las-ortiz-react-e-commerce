@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Rouses",
-            "img" :"./Assets/ramo1.webp",
+            "img" :"/Assets/ramo1.webp",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
             "category": "ramos"
@@ -11,7 +11,7 @@
         {
             "id": 2,
             "title": "Milley",
-            "img" :"./Assets/suscri8.jpg",
+            "img" :"/Assets/suscri8.jpg",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
             "category": "ramos"
@@ -19,7 +19,7 @@
         {
             "id": 3,
             "title": "Flower-box1",
-            "img" :"./Assets/flowerbox1.PNG",
+            "img" :"/Assets/flowerbox1.PNG",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
             "category": "flower-boxes"
@@ -28,7 +28,7 @@
         {
             "id": 4,
             "title": "Mike",
-            "img" :"./Assets/suscri8.jpg",
+            "img" :"/Assets/suscri8.jpg",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
             "category": "ramos"
@@ -36,7 +36,7 @@
         {
             "id": 5,
             "title": "Flower-box2",
-            "img" :"./Assets/flowerbox1.PNG",
+            "img" :"/Assets/flowerbox1.PNG",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
             "category": "flower-boxes"
@@ -53,7 +53,7 @@
         {
             "id": 7,
             "title": "Flower-box3",
-            "img" :"./Assets/flowerbox1.PNG",
+            "img" :"/Assets/flowerbox1.PNG",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
             "category": "flower-boxes"

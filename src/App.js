@@ -15,13 +15,13 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <ItemDetailContainer/>
+      {/* <ItemDetailContainer/> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tienda" element={<ItemListContainer />} />
         <Route path="/category/:categoryId" element={<ItemListContainer />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/datail/:detailId" element={<ItemDetailContainer />} />
+        <Route path="/detail/:detailId" element={<ItemDetailContainer />} />
         <Route path='*' element={<Error404/>}/>
       </Routes>
       <Footer />

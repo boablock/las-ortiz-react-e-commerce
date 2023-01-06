@@ -20,11 +20,17 @@ const ItemList = ({ products = [] }) => {
         </ul>
       </div>
       <div className="wrapper mt-5">
-      {products.map((p) => (
-          
+        {products.map((p) => (
           <Card
-          p={p}
+            key={p.id}
+            id={p.id}
+            title={p.title}
+            img={p.img}
+            btnClass={p.btnClass}
+            category={p.category}
+            btnText={p.btnText}
           />
+       
         ))}
       </div>
     </>

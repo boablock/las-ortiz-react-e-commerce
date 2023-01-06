@@ -31,7 +31,14 @@ useEffect(() => {
 
   return (
 
-      <ItemDetail data={data}/>
+      <ItemDetail 
+      key={data.id}
+      id={data.id}
+      title={data.title}
+      img={data.img}
+      btnClass={data.btnClass}
+      category={data.category}
+      btnText={data.btnText}/>
   
   )
 }
