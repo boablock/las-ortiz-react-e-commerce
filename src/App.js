@@ -1,48 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Components/Nabvar/Navbar';
-import Card from './Components/Card/Card';
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import "./App.css";
+import Navbar from "./Components/Nabvar/Navbar";
+// import Card from './Components/Card/Card';
+// import { useState,useEffect } from 'react';
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+import Footer from "./Components/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./Components/HomePage/HomePage";
+import Cart from "./Components/Cart/Cart";
+import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
+import Error404 from "./Components/404/Error404";
 
 
 function App() {
+
   return (
-    <div className="App">
-      <Navbar/>
-      <ItemListContainer
-        greeting={'Los ramos se entregan dentro del plazo de 48 hs luego del encargue'}
-      />
-        <div className='d-flex justify-content-around mt-5' >
-          <Card
-            cardTitle={'Rouses'}
-            img={'./Assets/ramo1.webp'}
-            desctription={'lalala'}
-            btnText={'Agregar'}
-          
-          />
-              <Card
-            cardTitle={'Miley'}
-            img={'./Assets/suscri8.jpg'}
-            desctription={'lalala'}
-            btnText={'Agregar'}
-          
-          />
-              <Card
-            cardTitle={'Flower-box'}
-            img={'./Assets/flowerbox1.PNG'}
-            desctription={'lalala'}
-            btnText={'Encargar'}
-          
-          />
-              <Card
-            cardTitle={'Ashton'}
-            img={'./Assets/body.jpg'}
-            desctription={'lalala'}
-            btnText={'Agregar'}
-          
-          />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      {/* <ItemDetailContainer/> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/tienda" element={<ItemListContainer />} />
+        <Route path="/category/:categoryId" element={<ItemListContainer />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/detail/:detailId" element={<ItemDetailContainer />} />
+        <Route path='*' element={<Error404/>}/>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
