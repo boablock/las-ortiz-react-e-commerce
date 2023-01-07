@@ -2,7 +2,7 @@ import React from "react";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
 
-export const ItemDetail = ({ img, title, id, btnText }) => {
+export const ItemDetail = ({ img, title, id }) => {
   console.log(title);
   return (
     <div className="itemDetailContainer">
@@ -11,7 +11,6 @@ export const ItemDetail = ({ img, title, id, btnText }) => {
         <h5 className="card-title text-center">{title}</h5>
         <img src={img} className="card-img-top" alt="" />
         <div className="card-body d-flex justify-content-end flex-column">
-        
           <Link to={`/detail/${id}`} className="btn btn-primary">
             Añadir al carrito
           </Link>
