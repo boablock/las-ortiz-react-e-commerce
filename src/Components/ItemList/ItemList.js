@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Card/Card";
 import { NavLink } from "react-router-dom";
 
-const ItemList = ({ products = [] }) => {
+const ItemList = ({ products }) => {
   return (
     <>
       <div className="d-flex flex-column align-items-center justify-content-center">
@@ -19,7 +19,7 @@ const ItemList = ({ products = [] }) => {
           </li>
         </ul>
       </div>
-      <div className="wrapper mt-5">
+      <div className="wrapper mt-5 m-0">
         {products.map((p) => (
           <Card
             key={p.id}
@@ -30,7 +30,6 @@ const ItemList = ({ products = [] }) => {
             category={p.category}
             btnText={p.btnText}
           />
-       
         ))}
       </div>
     </>

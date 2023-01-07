@@ -12,6 +12,7 @@ import Error404 from "./Components/404/Error404";
 
 
 function App() {
+
   return (
     <BrowserRouter>
       <Navbar />
