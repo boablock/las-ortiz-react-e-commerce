@@ -2,7 +2,7 @@ import React from "react";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
 
-export const ItemDetail = ({ img, title, id, btnText }) => {
+export const ItemDetail = ({ img, title, id }) => {
   console.log(title);
   return (
     <div className="itemDetailContainer">
