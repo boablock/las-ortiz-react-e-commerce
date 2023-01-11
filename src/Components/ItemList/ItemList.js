@@ -19,7 +19,7 @@ const ItemList = ({ products }) => {
           </li>
         </ul>
       </div>
-      <div className="wrapper mt-5 m-0">
+      <div className="wrapper mt-5 m-0 ">
         {products.map((p) => (
           <Card
             key={p.id}
