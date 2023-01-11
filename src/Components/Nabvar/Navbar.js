@@ -6,6 +6,7 @@ import "../CartWidget/CartWidget";
 import CartWidget from "../CartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
 
+
 const Navbar = () => {
   return (
     <nav className=" mb-3 navbar-boxes navbar navbar-expand-lg bg-light">

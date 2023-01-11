@@ -2,10 +2,11 @@ import React from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 
-
 const Card = (p) => {
+
   const {img,title,id} = p;
   // console.log(id);
+
   return (
     <div className="card">
       <img src={img} className="card-img-top" alt="..." />

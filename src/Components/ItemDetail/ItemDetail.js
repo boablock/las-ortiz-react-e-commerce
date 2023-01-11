@@ -1,19 +1,20 @@
-import React, {useState,useContext} from "react";
+import React, { useState } from "react";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../Context/CartContext";
+import ItemCount from "../../ItemCount/ItemCount";
 
-export const ItemDetail = ( data ) => {
+export const ItemDetail = (data) => {
 
   const [goToCart, setGoToCart] = useState(false);
 
-  const {addProduct} = useCartContext();
+  const {addProduct} = useCartContext(); //--> to have the context and use addProduct function, we have to import useConext and import the context. In this case we import one thing that have both (useCartContext function made in CartContext). Then, we can destructuring and catch addProduct function.
 
   const onAdd = (quantity) => {
     setGoToCart(true);
     addProduct(data,quantity)
-  }
-  
+  };
+
   return (
     <div className="itemDetailContainer">
       <div className="itemDetail">
@@ -21,9 +22,11 @@ export const ItemDetail = ( data ) => {
         <h5 className="card-title text-center">{data.title}</h5>
         <img src={data.img} className="card-img-top" alt="" />
         <div className="card-body d-flex justify-content-end flex-column">
-          <Link to={`/detail/${data.id}`} className="btn btn-primary">
-            Añadir al carrito
-          </Link>
+          {
+              goToCart 
+              ? <Link to="/cart">Terminar compra</Link>
+              : <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+          }
         </div>
       </div>
     </div>
