@@ -45,6 +45,8 @@ const CartProvider = ({ children }) => {
 
   const addProduct = (item, quantity) => {
     if (isInCart(item.id)) {
+     
+    
       //--> if the product is in cart, i dont want to add it, i want to find it and update the quantity
       setCart(
         cart.map((product) => {
@@ -55,27 +57,35 @@ const CartProvider = ({ children }) => {
       );
     } else {
       setCart([...cart, { ...item, quantity: quantity }]);
+      console.log('Price: ',item.price ,'Quantity: ', quantity);
     }
   };
+
+  const totalPrice =  () => cart.reduce((prev, act) => prev  + act.quantity  *  act.price, 0);
+
+
+
+
+  const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity,0);
 
   const clearCart = () => setCart([]); //--> clear cart is equal to set cart as an empty cart
 
   const isInCart = (id) =>
     cart.find((product) => product.id === id) ? true : false;
 
-  const removeProduct = (id) =>
-    setCart(cart.filter((product) => product.id !== id)); //--> an array will be create  without the product with that product.id
+  const removeProduct = (id) => setCart(cart.filter(product => product.id !== id)); //--> an array will be create  without the product with that product.id
 
   return (
     //--> value will have an object with all data we need (functions)
-    <CartContext.Provider
-      value={{
-        clearCart: clearCart,
-        isInCart: isInCart,
-        removeProduct: removeProduct,
-        addProduct: addProduct,
-      }}
-    >
+    <CartContext.Provider value={{
+        clearCart,
+        isInCart,
+        removeProduct,
+        addProduct,
+        totalPrice,
+        totalProducts, 
+        cart
+      }}>
       {children}
     </CartContext.Provider>
   );

@@ -16,12 +16,12 @@ function App() {
   return (
     <BrowserRouter>
       <CartProvider>
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/tienda" element={<ItemListContainer />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart/>} />
           <Route path="/detail/:detailId" element={<ItemDetailContainer />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
