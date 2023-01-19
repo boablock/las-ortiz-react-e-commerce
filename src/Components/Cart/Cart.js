@@ -20,7 +20,7 @@ const Cart = () => {
         {cart.map((product) => (
           <CartItem key={product.id} product={product} />
         ))}
-        <p>total: ${totalPrice()}</p>
+        <p className="d-flex justify-content-center">total: ${totalPrice()}</p>
     
       </>
     );
