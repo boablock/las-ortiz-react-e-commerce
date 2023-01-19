@@ -1,18 +1,15 @@
-//RAFCE
-
 import React from "react";
 import "./Navbar.css";
 import "../CartWidget/CartWidget";
 import CartWidget from "../CartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
 
-
 const Navbar = () => {
   return (
     <nav className=" mb-3 navbar-boxes navbar navbar-expand-lg bg-light">
       <div className="navbar-boxes container-fluid">
         <NavLink className="navbar-brand" to="./">
-          <img className="logo" src=".\Assets\logo.png"></img>
+          <img className="logo" src=".\Assets\logo.png" alt="" />
         </NavLink>
         <button
           className="navbar-toggler"
