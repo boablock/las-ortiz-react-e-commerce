@@ -3,29 +3,31 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import config from "../../config.json";
 import './ItemDetailContainer.css'
+import {getFirestore, doc, getDoc} from 'firebase/firestore'
+
+
 
 const ItemDetailContainer = () => {
   const [data, setData] = useState({});
 
   const { detailId } = useParams();
 
-  useEffect(() => {
-    const operation = new Promise((resolve, reject) => {
-      resolve(config.products);
-      console.log(config.products);
-    });
+  // 1- bring firestore service
+  // 2- create pointer to the data we need
+  // 3- bring data by promise
 
-    operation.then((result) =>
-      setData(result.find((product) => product.id === parseInt(detailId)))
-    );
-  }, [detailId]);
+  useEffect(() => {
+    const queryDb = getFirestore();
+    const queryDoc = doc(queryDb, 'products', detailId);
+    getDoc(queryDoc).then(res => setData({id: res.id, ...res.data()}));
+  }, []);
 
   return (
     <div className="itemDetailContainer">
       <ItemDetail
         key={data.id}
         id={data.id}
-        title={data.title}
+        title={data.name}
         img={data.img}
         btnClass={data.btnClass}
         category={data.category}

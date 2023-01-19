@@ -12,7 +12,7 @@ const ItemList = ({ products }) => {
           style={{ width: "50%", listStyle: "none", border: "solid 1px black" }}
         >
           <li>
-            <NavLink to="/category/flower-boxes"> Flower Box</NavLink>
+            <NavLink to="/category/flower-box"> Flower Box</NavLink>
           </li>
           <li>
             <NavLink to="/category/ramos"> Ramos </NavLink>
@@ -24,7 +24,7 @@ const ItemList = ({ products }) => {
           <Card
             key={p.id}
             id={p.id}
-            title={p.title}
+            title={p.name}
             img={p.img}
             btnClass={p.btnClass}
             category={p.category}
