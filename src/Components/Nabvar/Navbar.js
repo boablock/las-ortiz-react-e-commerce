@@ -30,42 +30,47 @@ const Navbar = () => {
             className=" d-flex justify-content-around navbar-boxes navbar-nav"
             style={{ width: "70%" }}
           >
-            <li className="nav-item">
-              <NavLink
-                className="nav-link active"
-                aria-current="page"
-                to="./tienda"
-              >
-                Tienda
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="#">
-                Suscripciones
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="#">
-                Nosotras
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="#">
-                Eventos
-              </NavLink>
-            </li>
-            <li className=" nav-item-cart">
-              <NavLink className=" nav-link " to="./cart">
-                <CartWidget />
-              </NavLink>
-            </li>
-          </ul>
-          {/* <NavLink className="cart nav-link " to="./cart">
+            <ul
+              className=" d-flex justify-content-around navbar-boxes navbar-nav"
+              style={{ width: "70%" }}
+            >
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link active"
+                  aria-current="page"
+                  to="./tienda"
+                >
+                  Tienda
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="#">
+                  Suscripciones
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="#">
+                  Nosotras
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="#">
+                  Eventos
+                </NavLink>
+              </li>
+              <li className=" nav-item-cart">
+                <NavLink className=" nav-link " to="./cart">
+                  <CartWidget />
+                </NavLink>
+              </li>
+            </ul>
+            {/* <NavLink className="cart nav-link " to="./cart">
                         <CartWidget/>
                       </NavLink> */}
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

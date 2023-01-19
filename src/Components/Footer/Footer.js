@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
   return (
@@ -18,12 +19,12 @@ const Footer = () => {
           <li className="title">
             <strong>SEGUINOS</strong>
           </li>
-          <a
+          <NavLink
             className="igBox"
             href="https://www.instagram.com/lasortiz.flowerstore/"
           >
             <i id="igFooter" className="bi bi-instagram"></i>
-          </a>
+          </NavLink>
         </ul>
       </div>
       <div className="footerBox">

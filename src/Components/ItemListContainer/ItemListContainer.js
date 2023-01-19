@@ -8,8 +8,6 @@ import ItemCount from "../../ItemCount/ItemCount";
 import {getFirestore, collection, getDocs, query, where} from 'firebase/firestore'
 
 const ItemListContainer = () => {
-
-
   const [products, setProducts] = useState([]); //--> array con primer valor [0] = [], la posicion 2 [1] es una funcion que actualiza el valor de products, el cual inicial como un array vacio en este caso.
 
   const { categoryId } = useParams();
@@ -27,6 +25,7 @@ const ItemListContainer = () => {
       
       const queryFilter = query (queryCollection, where('category', '==', categoryId)); 
       getDocs(queryFilter).then(res => setProducts(res.docs.map(product =>({id: product.id, ...product.data()})))); 
+
     } else {
       getDocs(queryCollection).then(res => setProducts(res.docs.map(product =>({id: product.id, ...product.data()})))); 
     }
@@ -40,5 +39,3 @@ const ItemListContainer = () => {
 };
 
 export default ItemListContainer;
-
-
