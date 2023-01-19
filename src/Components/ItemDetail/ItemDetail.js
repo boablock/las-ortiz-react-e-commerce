@@ -8,7 +8,7 @@ export const ItemDetail = (data) => {
 
   const [goToCart, setGoToCart] = useState(false);
 
-  const {addProduct} = useCartContext(); //--> to have the context and use addProduct function, we have to import useConext and import the context. In this case we import one thing that have both (useCartContext function made in CartContext). Then, we can destructuring and catch addProduct function.
+  const {addProduct} = useCartContext(); //--> to have the context and use addProduct function, we have to import useConext and import the context. In this case we import only one thing that have both (useCartContext function made in CartContext). Then, we can destructuring and catch addProduct function
 
   const onAdd = (quantity) => {
     setGoToCart(true);
@@ -17,7 +17,7 @@ export const ItemDetail = (data) => {
 
   return (
     <div className="itemDetailContainer">
-      <div className="itemDetail">
+      <div className="itemDetail"> 
         <h3 className="text-center"> DETALLE DE PRODUCTO</h3>
         <h5 className="card-title text-center">{data.title}</h5>
         <img src={data.img} className="card-img-top" alt="" />

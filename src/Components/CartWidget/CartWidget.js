@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "./CartWidget.css";
 
@@ -6,9 +7,9 @@ const CartWidget = () => {
 
   return (
     <div>
-      <a href="...">
+      <NavLink href="...">
         <i className="bi bi-cart3 h2 link-danger cart-widget position-relative"></i>
-      </a>
+      </NavLink>
       <span className=" cart-counter position-absolute bg-white text-center text-danger translate-middle h5 ">
         10
       </span>

@@ -2,6 +2,7 @@
     "products" : [
         {
             "id": 1,
+            "price":  "3000",
             "title": "Rouses",
             "img" :"/Assets/ramo1.webp",
             "btnText": "Encargar",
@@ -10,6 +11,7 @@
         },
         {
             "id": 2,
+            "price": 2000,
             "title": "Milley",
             "img" :"/Assets/suscri8.jpg",
             "btnText": "Encargar",
@@ -18,6 +20,7 @@
         },
         {
             "id": 3,
+            "price": 6000,
             "title": "Flower-box1",
             "img" :"/Assets/flowerbox1.PNG",
             "btnText": "Encargar",
@@ -28,6 +31,7 @@
         {
             "id": 4,
             "title": "Mike",
+            "price": 3000,
             "img" :"/Assets/suscri8.jpg",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
@@ -35,6 +39,7 @@
         },
         {
             "id": 5,
+            "price": 6000,
             "title": "Flower-box2",
             "img" :"/Assets/flowerbox1.PNG",
             "btnText": "Encargar",
@@ -45,6 +50,7 @@
         {
             "id": 6,
             "title": "Ashton",
+            "price": 3000,
             "img" :"https://static.wixstatic.com/media/9c7380_5e7e8ed4e84d40ae9a7794a52e48a2c4~mv2.jpg/v1/fill/w_317,h_257,al_c,q_80,usm_0.66_1.00_0.01/9c7380_5e7e8ed4e84d40ae9a7794a52e48a2c4~mv2.webp",
             "btnText": "Encargar",
             "btnClassName":"btn btn-primary",
@@ -52,6 +58,7 @@
         },
         {
             "id": 7,
+            "price": 6000,
             "title": "Flower-box3",
             "img" :"/Assets/flowerbox1.PNG",
             "btnText": "Encargar",
@@ -60,6 +67,7 @@
         },
         {
             "id": 8,
+            "price": 2000,
             "title": "Britney",
             "img" :"https://static.wixstatic.com/media/9c7380_5e7e8ed4e84d40ae9a7794a52e48a2c4~mv2.jpg/v1/fill/w_317,h_257,al_c,q_80,usm_0.66_1.00_0.01/9c7380_5e7e8ed4e84d40ae9a7794a52e48a2c4~mv2.webp",
             "btnText": "Encargar",

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./HomePage.css";
 const HomePage = () => {
   return (
@@ -11,13 +12,13 @@ const HomePage = () => {
               Las ortiz
             </h1>
             <h2 id="h2"> Flower Store</h2>
-            <a
+            <NavLink
               className="aSize"
               href="https://www.instagram.com/lasortiz.flowerstore/"
               target="_blank"
             >
               <i className="bi bi-instagram"></i>
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>
@@ -34,9 +35,9 @@ const HomePage = () => {
               en nuestra Tienda Online.Ramos de novia. Instalaciones y estilismo
               con materiales de la naturaleza.{" "}
             </p>
-            <a href="#" className="btn btn-primary">
+            <NavLink href="#" className="btn btn-primary">
               Mas sobre Las Ortiz
-            </a>
+            </NavLink>
           </div>
           <div className="block2 col-sm-6 ">
             <div>
@@ -61,9 +62,9 @@ const HomePage = () => {
               Sábados realizamos delivery sin cargo para CABA y Zona Norte.
               Contactanos para armar una suscripción a tu medida y gusto!{" "}
             </p>
-            <a href="#" className="btn btn-primary">
+            <NavLink href="#" className="btn btn-primary">
               Pedir cotizacion
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>

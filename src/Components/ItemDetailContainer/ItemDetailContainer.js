@@ -23,6 +23,7 @@ const ItemDetailContainer = () => {
   return (
     <div className="itemDetailContainer">
       <ItemDetail
+        // data={data} //--> doesnt render photo products, why? 
         key={data.id}
         id={data.id}
         title={data.title}
@@ -30,6 +31,7 @@ const ItemDetailContainer = () => {
         btnClass={data.btnClass}
         category={data.category}
         btnText={data.btnText}
+        price ={data.price}
       />
     </div>
   );
