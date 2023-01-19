@@ -1,5 +1,3 @@
-//RAFCE
-
 import React from "react";
 import "./Navbar.css";
 import "../CartWidget/CartWidget";
@@ -8,26 +6,29 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <>
-      <nav className=" mb-3 navbar-boxes navbar navbar-expand-lg bg-light">
-        <div className="navbar-boxes container-fluid">
-          <NavLink className="navbar-brand" to="./">
-            <img className="logo" src=".\Assets\logo.png" alt="" ></img>
-          </NavLink>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className=" d-flex justify-content-center navbar-boxes collapse navbar-collapse"
-            id="navbarNav"
+    <nav className=" mb-3 navbar-boxes navbar navbar-expand-lg bg-light">
+      <div className="navbar-boxes container-fluid">
+        <NavLink className="navbar-brand" to="./">
+          <img className="logo" src=".\Assets\logo.png" alt="" />
+        </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className=" d-flex justify-content-center navbar-boxes collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul
+            className=" d-flex justify-content-around navbar-boxes navbar-nav"
+            style={{ width: "70%" }}
           >
             <ul
               className=" d-flex justify-content-around navbar-boxes navbar-nav"
