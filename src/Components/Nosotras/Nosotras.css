@@ -1,0 +1,29 @@
+.nosotrasSection1 {
+    background: fixed;
+    width: 100%;
+    height: 1000px;
+    background: url(../../../public/Assets/nosotras.jpg);
+    /* background-image: url(../../../public/Assets/suscri4.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotrasSection1 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 25%;
+    text-align: center;
+    background-color: #EDE1DB;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  .nosotrasSection1 .text .title_historia {
+    font-weight: 700;
+  }

@@ -15,3 +15,5 @@ Firebase
     C bring data by promise
  
 
+Apuntes
+nvm -> node vertion manager: allow have some node vertions in computer. not all dependence can handdle all projects

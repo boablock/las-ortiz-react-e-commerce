@@ -1,0 +1,52 @@
+.boxImgSuscri {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .hrBoxSuscrip {
+    background-color: #EDE1DB;
+    height: 1px;
+    width: 40%;
+  }
+  
+  .hrRey {
+    background-color: #EDE1DB;
+    height: 1px;
+    width: 60%;
+  }
+  
+  .boxSuscrip {
+    border: 0px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgSuscrip {
+    max-height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    filter: brightness(95%);
+  }
+  
+  .titleSuscrip {
+    margin: 0px;
+    font-weight: 700 !important;
+  }
+  
+  .formBox {
+    border: solid #EDE1DB 5px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  label {
+    font-weight: 700;
+  }
+  
+  .pSuscrip {
+    margin-top: 5px;
+    text-align: center;
+  }

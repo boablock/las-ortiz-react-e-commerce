@@ -27,7 +27,7 @@ const CartProvider = ({ children }) => {
 
   console.log("Carrito: ", cart);
 
-  // 3) NO SE ESTA CAMBIANDO EL ARRAY, NO SE ESTA
+  // 3) 
   // const addProduct = (item, quantity) => {
   //   let newCart;
   //   let product = cart.find((product) => product.id === item.id);
@@ -42,7 +42,6 @@ const CartProvider = ({ children }) => {
   // };
 
   //4)
-
   const addProduct = (item, quantity) => {
     if (isInCart(item.id)) {
      
@@ -63,15 +62,11 @@ const CartProvider = ({ children }) => {
 
   const totalPrice =  () => cart.reduce((prev, act) => prev  + act.quantity  *  act.price, 0);
 
-
-
-
   const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity,0);
 
   const clearCart = () => setCart([]); //--> clear cart is equal to set cart as an empty cart
 
-  const isInCart = (id) =>
-    cart.find((product) => product.id === id) ? true : false;
+  const isInCart = (id) => cart.find((product) => product.id === id) ? true : false;
 
   const removeProduct = (id) => setCart(cart.filter(product => product.id !== id)); //--> an array will be create  without the product with that product.id
 
