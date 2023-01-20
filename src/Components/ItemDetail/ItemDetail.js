@@ -19,7 +19,7 @@ export const ItemDetail = (data) => {
     <div className="itemDetailContainer">
       <div className="itemDetail"> 
         <h3 className="text-center"> DETALLE DE PRODUCTO</h3>
-        <h5 className="card-title text-center">{data.title}</h5>
+        <h5 className="card-title text-center">{data.name}</h5>
         <img src={data.img} className="card-img-top" alt="" />
         <div className="card-body d-flex justify-content-end flex-column">
           {

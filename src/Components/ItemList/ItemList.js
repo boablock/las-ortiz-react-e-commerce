@@ -25,11 +25,10 @@ const ItemList = ({ products }) => {
           <Card
             key={p.id}
             id={p.id}
-            title={p.name}
+            name={p.name}
             img={p.img}
-            btnClass={p.btnClass}
+            btnClassName={p.btnClassName}
             category={p.category}
-            btnText={p.btnText}
           />
         ))}
 
