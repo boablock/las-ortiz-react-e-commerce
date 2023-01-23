@@ -8,17 +8,15 @@ const HomePage = () => {
         <div className="boxTransparente">
           <div id="divHome" className="wow animate__animated animate__pulse">
             <h1 className="lasOrtizTitle wow animate__animated animate__pulse">
-              {" "}
               Las ortiz
             </h1>
             <h2 id="h2"> Flower Store</h2>
-            <NavLink
+            <a
               className="aSize"
               href="https://www.instagram.com/lasortiz.flowerstore/"
-              target="_blank"
             >
               <i className="bi bi-instagram"></i>
-            </NavLink>
+            </a>
           </div>
         </div>
       </section>
@@ -30,12 +28,11 @@ const HomePage = () => {
             </div>
             <p className="pBlock">
               Nos dedicamos al diseño con flores, plantas y materiales propios
-              de la naturaleza desde nuestro taller en Olivos. Ramos de
-              suscripción, regalos frescos, productos de la naturaleza y objetos
+              de la naturaleza desde nuestro taller en Villa Adelina.Suscripciones, regalos frescos, productos de la naturaleza y objetos
               en nuestra Tienda Online.Ramos de novia. Instalaciones y estilismo
-              con materiales de la naturaleza.{" "}
+              con materiales de la naturaleza.
             </p>
-            <NavLink href="#" className="btn btn-primary">
+            <NavLink to="/nosotras" className="btn btn-primary">
               Mas sobre Las Ortiz
             </NavLink>
           </div>

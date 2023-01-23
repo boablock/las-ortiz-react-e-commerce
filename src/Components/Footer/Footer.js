@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link} from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           </li>
           <li className="info">San isidro, Prov. de Buenos Aires, Argentina</li>
           <li className="info">Teléfono y Whatsapp:011 59455293</li>
-          {/* <a  id="wappBox" className="info" id="logoWhatsap" href="https://www.instagram.com/lasortiz.flowerstore/"><i  className="bi bi-whatsapp "></i></a> */}
+          <NavLink  id="wappBox logoWhatsap" className="info" to="https://www.instagram.com/lasortiz.flowerstore/"><i  className="bi bi-whatsapp "></i></NavLink>
         </ul>
       </div>
       <div className="footerBox">
@@ -19,17 +19,16 @@ const Footer = () => {
           <li className="title">
             <strong>SEGUINOS</strong>
           </li>
-          <NavLink
+          <a
             className="igBox"
-            href="https://www.instagram.com/lasortiz.flowerstore/"
-          >
+            href="https://www.instagram.com/lasortiz.flowerstore/">
             <i id="igFooter" className="bi bi-instagram"></i>
-          </NavLink>
-        </ul>
+          </a>
+        </ul> 
       </div>
       <div className="footerBox">
         <ul>
-          <li className="title">
+          <li className="title"> 
             {" "}
             <strong>HORARIOS DE ATENCION</strong>
           </li>

@@ -35,7 +35,7 @@ const Cart = () => {
   } else {
     return (
       <>
-        {console.log(cart)}
+        {console.log(cart.length)}
         {cart.map((product) => ( 
           <CartItem key={product.id} product={product} />
         ))}

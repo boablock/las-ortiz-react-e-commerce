@@ -26,15 +26,22 @@
   .HomeSection1 .boxTransparente #divHome .lasOrtizTitle {
     font-weight: 700;
   }
-  .HomeSection1 .boxTransparente #divHome .bi-instagram {
-    font-size: 30px;
+
+  .aSize{
+    border: solid 1px black;
+    width: 70px;
+  }
+
+  .bi {
+    font-size: 2rem;
     color: black;
+    transition: transform .2s;
   }
-  .HomeSection1 .boxTransparente #divHome .bi-instagram:hover {
+  .bi:hover {
     color: #b39ddb;
-    transform: scale(0.9);
+    transform: scale(1.2);
   }
-  
+
   .block1, .block2 {
     display: flex;
     flex-direction: column;
@@ -45,7 +52,7 @@
   }
   .block1 .titleBlock, .block2 .titleBlock {
     margin-bottom: 30px;
-    font-weight: 700;
+    font-weight: 700; 
   }
   .block1 .pBlock, .block2 .pBlock {
     text-align: center;
