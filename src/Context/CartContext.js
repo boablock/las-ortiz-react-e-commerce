@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 
+console.log(React.createContext());
 const CartContext = React.createContext([]);
 console.log(CartContext); // Object CartContext, Provider is an atribute. To access, CartContext.Provider
 
@@ -71,7 +72,7 @@ const CartProvider = ({ children }) => {
   const removeProduct = (id) => setCart(cart.filter(product => product.id !== id)); //--> an array will be create  without the product with that product.id
 
   return (
-    //--> value will have an object with all data we need (functions)
+    //--> The component will return the CartContext object and the value will have an object with all data we need (functions)
     <CartContext.Provider value={{
         clearCart,
         isInCart,

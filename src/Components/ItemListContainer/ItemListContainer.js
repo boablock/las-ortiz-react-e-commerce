@@ -28,7 +28,7 @@ const ItemListContainer = () => {
 
     } else {
       getDocs(queryCollection).then(res => setProducts(res.docs.map(product =>({id: product.id, ...product.data()})))); 
-    }
+    } 
   }, [categoryId]);
 
   return (

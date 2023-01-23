@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 const ItemList = ({ products }) => {
   return (
     <>
-
       <div className="d-flex flex-column align-items-center justify-content-center">
         <h5>Categories</h5>
         <ul
@@ -31,7 +30,6 @@ const ItemList = ({ products }) => {
             category={p.category}
           />
         ))}
-
       </div>
     </>
   );

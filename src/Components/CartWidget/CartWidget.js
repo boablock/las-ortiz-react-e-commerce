@@ -7,7 +7,7 @@ const CartWidget = () => {
 
   return (
     <div>
-      <NavLink href="...">
+      <NavLink to="/cart">
         <i className="bi bi-cart3 h2 link-danger cart-widget position-relative"></i>
       </NavLink>
       <span className=" cart-counter position-absolute bg-white text-center text-danger translate-middle h5 ">

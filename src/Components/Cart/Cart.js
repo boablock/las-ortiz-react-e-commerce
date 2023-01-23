@@ -28,7 +28,7 @@ const Cart = () => {
   if (cart.length === 0) {
     return (
       <>
-        <p>This are not elements on cart</p>
+        <p>No items in the cart</p>
         <Link to="/tienda"> Go shopping </Link>
       </>
     );
