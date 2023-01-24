@@ -1,6 +1,7 @@
 
-.navbar-boxes{
-    /* border: solid 1px grey; */
+.nav-bar{
+    background-color: #EDE1DB !important;
+    height: 150px;
 }
 
 .logo{
