@@ -1,6 +1,6 @@
 
 .navbar-boxes{
-    border: solid 1px grey;
+    /* border: solid 1px grey; */
 }
 
 .logo{
@@ -18,8 +18,4 @@
 
 .nav-link{
     color: black;
-}
-
-.cart{
-   
 }
