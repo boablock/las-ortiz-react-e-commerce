@@ -1,4 +1,35 @@
 
+/*Reset*/
+
+*, *:before, *:after{
+margin: 0;
+padding: 0;
+outline: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+    background-color: #EDE1DB;
+}
+
+.menu{
+    height:75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_items{
+   
+}
+
+
+
+
+/* 
+
 .nav-bar{
     background-color: #EDE1DB !important;
     height: 150px;
@@ -6,11 +37,11 @@
 
 .logo{
     border-radius: 100px;
-    /* width: 80px; */
+
 }
 
 .nav-item-cart{
-   /* border: solid 1px red; */
+
    width: 70px;
 }
 
@@ -20,4 +51,4 @@
 
 .nav-link{
     color: black;
-}
+} */
