@@ -10,7 +10,7 @@ const CartWidget = () => {
   return (
     <div>
       <NavLink to="/cart">
-        <i className="bi bi-cart3 h2 link-danger cart-widget position-relative"></i>
+        <i className="cartWidget bi bi-cart3 h2 link-danger cart-widget position-relative"></i> 
       </NavLink>
       <span className=" cart-counter position-absolutegi text-center translate-middle h5 ">
         {cart.length}

@@ -71,6 +71,15 @@ const CartProvider = ({ children }) => {
 
   const removeProduct = (id) => setCart(cart.filter(product => product.id !== id)); //--> an array will be create  without the product with that product.id
 
+  // const toggle = addEventListener('DOMContentLoaded', () => {
+  //     const btn_menu = document.querySelector('.btn_menu')
+  //     if(btn_menu){
+  //       btn_menu.addEventListener('click', () => {
+  //         const menu_items = document.querySelector('.menu_items')
+  //         menu_items.classList.toggle('show')
+  //       })
+  //     }
+  // } )
   return (
     //--> The component will return the CartContext object and the value will have an object with all data we need (functions)
     <CartContext.Provider value={{
@@ -79,7 +88,7 @@ const CartProvider = ({ children }) => {
         removeProduct,
         addProduct,
         totalPrice,
-        totalProducts, 
+        totalProducts,
         cart
       }}>
       {children}
