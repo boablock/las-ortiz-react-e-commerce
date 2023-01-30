@@ -5,21 +5,28 @@ import CartWidget from "../CartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { AiOutlineCloseCircle } from "react-icons/rx";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Navbar = () => {
+
+  const [toggle, setToggle] = useState(false)
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  }
   return (
     <>
-      <div className="navbar1">
+      <nav className={ toggle ? 'navbar1 expanded ' : ' navbar1'}>
         <div className="">
           <NavLink className="" to="./">
             <img className="logo1" src=".\Assets\logo.png" alt="" />
           </NavLink>
         </div>
-        <div className="toggle-icon">
-          <RxHamburgerMenu />
+        <div className="toggle-icon" onClick={handleToggle}>
+          { toggle ? <AiOutlineCloseCircle/> : <RxHamburgerMenu />}
         </div>
-        <div className="links">
+
+        <ul className="links">
           <li>
             <NavLink className="li" to="./">
               Home
@@ -45,13 +52,13 @@ const Navbar = () => {
               Contacto
             </NavLink>
           </li>
-          <li className="li">
-            <NavLink className="li" to="./cart">
+          <li className="li-cart">
+            <NavLink className="li-cart" to="./cart">
               <CartWidget />
             </NavLink>
           </li>
-        </div>
-      </div>
+        </ul>
+      </nav>
     </>
   );
 };

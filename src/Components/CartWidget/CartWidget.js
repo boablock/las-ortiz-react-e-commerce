@@ -11,7 +11,7 @@ const CartWidget = () => {
   return (
     <div className="div-cartwidget">
       <NavLink to="/cart">
-        <BsCart className="cart" color='black' size = '20px'/>
+        <BsCart className="cart" color='black' size = '35px'/>
       </NavLink>
       <span className=" cart-counter1 h6 ">
         {cart.length}
