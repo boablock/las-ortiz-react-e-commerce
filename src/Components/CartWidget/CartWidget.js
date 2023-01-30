@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useCartContext } from "../../Context/CartContext";
+import { BsCart } from "react-icons/bs"
 
 import "./CartWidget.css";
 
@@ -8,11 +9,11 @@ const CartWidget = () => {
   const { cart } = useCartContext();
 
   return (
-    <div>
+    <div className="div-cartwidget">
       <NavLink to="/cart">
-        <i className="bi bi-cart3 h2 link-danger cart-widget position-relative"></i>
+        <BsCart className="cart" color='black' size = '20px'/>
       </NavLink>
-      <span className=" cart-counter position-absolutegi text-center translate-middle h5 ">
+      <span className=" cart-counter1 h6 ">
         {cart.length}
       </span>
     </div>
