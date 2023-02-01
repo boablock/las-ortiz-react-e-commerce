@@ -1,15 +1,26 @@
 
 .card{
     width: 16rem;
+    margin-left: 50px;
+    padding: 5px;
 }
 
 .wrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-bottom: 3rem;
-  }
+  } 
+
+  @media (max-width: 412px) {
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 60px;
+    }
+}
