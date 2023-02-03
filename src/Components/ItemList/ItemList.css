@@ -3,25 +3,29 @@
 .wrapper-tienda{
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 30px;
+
    
 }
 
 .search-box{
-    /* border:solid yellow 3px */
+    border: solid 3px #EDE1DB;
+   border-radius: 10px;
+   padding: 20px;
 }
 
 .items-box{
-    border: solid 3px black;
-
+    border: solid 3px #EDE1DB;
+    border-radius: 10px;
+    padding: 30px;
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0px;
     justify-content: center;
     /* align-items: center; */
-    /* margin-left: 60px;
-    margin-bottom: 3rem; */
+    /* margin-left: 60px; */
+    margin-bottom: 30px
 }
 @media (max-width: 768px) {
     .wrapper-tienda{

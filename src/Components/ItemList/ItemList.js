@@ -8,14 +8,15 @@ const ItemList = ({ products }) => {
     <>
       <div className="wrapper-tienda">
         <div className="search-box mt-5 mr-5">
-          <h6>Busca tu producto:</h6>
+          <h6>Busca tu producto</h6>
           <ul
             className="d-flex flex-columns justify-content-start"
             style={{
               width: "100%",
               height:'30%',
               listStyle: "none",
-              border: "solid 3px #EDE1DB",
+              // border: "solid 3px #EDE1DB",
+              padding:'20px',
             }}
           >
             <li>
