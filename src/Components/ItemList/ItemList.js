@@ -8,7 +8,7 @@ const ItemList = ({ products }) => {
     <>
       <div className="wrapper-tienda">
         <div className="search-box mt-5 mr-5">
-          <h6>Busca tu producto</h6>
+          <h6 className=" font-bold underline">Busca tu producto:</h6>
           <ul
             className="d-flex flex-columns justify-content-start"
             style={{
